@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Theme Стандарты кодирования">
+	<!-- Смотрите https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
+	<!-- Смотрите https://github.com/WordPress/WordPress-Coding-Standards -->
+	<!-- Смотрите https://github.com/WPTRT/WPThemeReview -->
+	<!-- Смотрите https://github.com/PHPCompatibility/PHPCompatibilityWP -->
+
+	<!-- Установите описание для этого набора правил. -->
+	<description>Пользовательский набор стандартных кодовых правил для проверки тем WordPress.</description>
+
+
+	<!--
+	#############################################################################
+	КОМАНДНАЯ СТРОКА АРГУМЕНТОВ
+	https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml
+	#############################################################################
+	-->
+
+	<!-- Передайте некоторые флаги PHPCS:
+		 p flag: Показать прогресс запуска.
+		 s flag: Показывать снифф коды во всех отчетах.
+	-->
+	<arg value="ps"/>
+
+	<!-- Обрезать путь к файлу до соответствующего бита. -->
+	<arg name="basepath" value="./"/>
+
+	<!-- Проверьте до 8 файлов одновременно. -->
+	<arg name="parallel" value="8"/>
+
+	<!-- Только проверяйте файлы PHP. Файлы JS и CSS проверяются отдельно с помощью пакета @ wordpress / scripts. -->
+	<arg name="extensions" value="php"/>
+
+	<!-- Проверьте все файлы в этом каталоге и каталоги перед ним. -->
+	<file>.</file>
+
+	<!-- Исключить шаблоны. -->
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+
+	<!--
+	#############################################################################
+	Используйте WordPress и обзор тем
+	#############################################################################
+	-->
+
+	<rule ref="WordPress">
+		<!-- Это правило здесь не применяется, так как префикс _s должен быть изменен автором темы. -->
+		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.ShortPrefixPassed"/>
+	</rule>
+	<rule ref="WPThemeReview"/>
+
+	<!--
+	#############################################################################
+	SNIFF СПЕЦИФИЧЕСКАЯ КОНФИГУРАЦИЯ
+	#############################################################################
+	-->
+
+	<!-- Убедитесь, что text_domain установлен на нужный текстовый домен.
+		 Несколько допустимых текстовых доменов могут быть предоставлены в виде списка через запятую. -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array" value="_s"/>
+		</properties>
+	</rule>
+
+	<!-- Разрешить исключения для конкретных тем в правилах имен файлов на основе иерархии тем. -->
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="is_theme" value="true"/>
+		</properties>
+	</rule>
+
+	<!-- Установите минимальную поддерживаемую версию WP. Это используется несколькими снифами.
+		 Установленная здесь минимальная версия должна соответствовать минимальной версии WP, указанной в теге «Требуется минимум» в файле readme.txt. -->
+	<config name="minimum_supported_wp_version" value="4.5"/>
+
+	<rule ref="WordPress.Arrays.MultipleStatementAlignment">
+		<properties>
+			<!-- Нет необходимости настраивать выравнивание больших массивов при удалении элемента с наибольшим ключом. -->
+			<property name="exact" value="false"/>
+			<!-- Не выравнивайте многострочные элементы, если ВСЕ элементы в массиве многострочные. -->
+			<property name="alignMultilineItems" value="!=100"/>
+			<!-- Оператор присваивания массива всегда должен находиться на одной строке с ключом массива. -->
+			<property name="ignoreNewlines" value="false"/>
+		</properties>
+	</rule>
+
+	<!-- Убедитесь, что все в глобальном пространстве имен имеет префикс для конкретной темы.
+		 Несколько допустимых префиксов могут быть предоставлены в виде списка через запятую. -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array" value="_s" />
+		</properties>
+	</rule>
+
+
+	<!--
+	#############################################################################
+	ИСПОЛЬЗУЙТЕ ПРАВИЛА СОВМЕСТИМОСТИ PHP
+	#############################################################################
+	-->
+
+	<config name="testVersion" value="5.6-"/>
+	<rule ref="PHPCompatibilityWP"/>
+
+</ruleset>

@@ -1,0 +1,198 @@
+# Copyright (C) 2020 Automattic
+# Этот файл распространяется в соответствии с GNU General Public License v2 или новее.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-04-17T21:03:15+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: _s\n"
+
+#. Тема Название темы
+msgid "_s"
+msgstr ""
+
+#. Тема URI темы
+msgid "https://underscores.me/"
+msgstr ""
+
+#. Описание темы
+msgid "Привет. Я начальная тема под названием <code>_s</code> или <em>подчеркивание</em>, если хотите. Я тема, предназначенная для взлома, поэтому не используйте меня в качестве <em>родительской темы </em>. Вместо этого попробуйте превратить меня в следующую, самую удивительную тему WordPress. Вот для чего я здесь."
+msgstr ""
+
+#. Автор темы
+msgid "Automattic"
+msgstr ""
+
+#. Автор URI темы
+msgid "https://automattic.com/"
+msgstr ""
+
+#: 404.php:18
+msgid "Упс! Эту страницу&rsquo; нельзя найти."
+msgstr ""
+
+#: 404.php:22
+msgid "Похоже, что ничего не было найдено в этом месте. Может быть, попробуйте одну из ссылок ниже или поиск?"
+msgstr ""
+
+#: 404.php:31
+msgid "Самые используемые категории"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:49
+msgid "Попробуйте поискать в ежемесячных архивах. %1$s"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:35
+msgid "Одна мысль на &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+msgctxt "заголовок комментария"
+msgid "%1$s мысль про &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s мысли о &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:68
+msgid "комментарии закрыты."
+msgstr ""
+
+#: footer.php:18
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. translators: %s: CMS name, i.e. WordPress.
+#: footer.php:21
+msgid "Сайт работает на %s"
+msgstr ""
+
+#. translators: 1: Theme name, 2: Theme author.
+#: footer.php:27
+msgid "Тема: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:53
+msgid "Primary"
+msgstr ""
+
+#: functions.php:130
+msgid "Сайдбар"
+msgstr ""
+
+#: functions.php:132
+msgid "Добавить виджеты здесь."
+msgstr ""
+
+#: header.php:26
+msgid "Перейти к содержанию"
+msgstr ""
+
+#: header.php:49
+msgid "Основное меню"
+msgstr ""
+
+#. translators: %s: post date.
+#: inc/template-tags.php:30
+msgctxt "Дата публикации"
+msgid "Опубликовано %s"
+msgstr ""
+
+#. translators: %s: post author.
+#: inc/template-tags.php:46
+msgctxt "автор публикации"
+msgid "by %s"
+msgstr ""
+
+#. translators: используется между элементами списка, после запятой есть пробел
+#: inc/template-tags.php:63
+msgid ", "
+msgstr ""
+
+#. translators: 1: Список категорий.
+#: inc/template-tags.php:66
+msgid "Опубликовано в %1$s"
+msgstr ""
+
+#. translators: Используется между элементами списка, после запятой есть пробел
+#: inc/template-tags.php:70
+msgctxt "разделитель элементов списка"
+msgid ", "
+msgstr ""
+
+#. translators: 1: Список тегов.
+#: inc/template-tags.php:73
+msgid "Помеченный %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:83
+msgid "Оставить комментарий<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Название текущего поста. Видно только скринридерам
+#: inc/template-tags.php:100
+#: template-parts/content-page.php:39
+msgid "Редактировать <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/woocommerce.php:186
+msgid "Просмотр вашей корзины"
+msgstr ""
+
+#. translators: number of items in the mini cart.
+#: inc/woocommerce.php:190
+msgid "%d пункт"
+msgid_plural "%d пункты"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: поисковый запрос.
+#: search.php:22
+msgid "Результаты поиска для: %s"
+msgstr ""
+
+#: single.php:23
+msgid "Предыдущий:"
+msgstr ""
+
+#: single.php:24
+msgid "Следующий:"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Ничего не найдено"
+msgstr ""
+
+#. translators: 1: ссылка на страницу WP нового поста администратора.
+#: template-parts/content-none.php:24
+msgid "Готовы опубликовать свой первый пост? <a href=\"%1$s\">Начните здесь</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid "Извините, но ничего не соответствует вашим условиям поиска. Пожалуйста, попытайтесь снова с другими ключевыми словами."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid "Мы не можем найти&rsquo; то, что вы&rsquo; ищите. Возможно, поиск может помочь."
+msgstr ""
+
+#: template-parts/content-page.php:25
+#: template-parts/content.php:53
+msgid "Страницы:"
+msgstr ""
+
+#. translators: %s: Название текущего поста. Видно только скринридерам
+#: template-parts/content.php:40
+msgid "Продолжить чтение<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
