@@ -1,21 +1,21 @@
 /*!
-Имя Темы: underscores_rus
-URI темы: https://github.com/w3schoolsrus/underscores_rus/
-Автор: Automattic
-Автор URI: https://automattic.com/
-Описание: Привет. Я стартовая тема под названием <code>underscores_rus</code>, или <em>подчеркивание</em>, если хотите. Я тема, предназначенная для взлома, поэтому не используйте меня в качестве <em>родительской темы</em>. Вместо этого попробуйте превратить меня в следующую, самую удивительную тему WordPress. Вот для чего я здесь.
-Версия: 1.0.0
-Проверено до: 5.4
-Требует PHP: 5.6
-Лицензия: GNU General Public License v2 or later
-Лицензия URI: LICENSE
-Текстовый домен: _s
-Теги: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Theme Name: underscores_rus
+Theme URI: https://github.com/w3schoolsrus/underscores_rus/
+Author: Automattic
+Author URI: https://automattic.com/
+Description: Привет. Я начальная тема под названием <code>underscores_rus</ code> или <em>подчеркивание</ em>, если хотите. Я тема, предназначенная для взлома, поэтому не используйте меня в качестве <em> родительской темы </ em>. Вместо этого попробуйте превратить меня в следующую, самую удивительную тему WordPress. Вот для чего я здесь.
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: underscores_rus
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Эта тема, как и WordPress, распространяется по лицензии GPL. Используйте её, чтобы сделать что-то классное, повеселиться и поделиться тем, что вы узнали.
 
-_s is базируется на Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
-Underscores распространяется в соответствии с условиями GNU GPL v2 или новее.
+underscores_rus is базируется на Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+underscores_rus распространяется в соответствии с условиями GNU GPL v2 или новее.
 
 Нормализация стилей помогла благодаря прекрасной работе Николаса Галлахера и Джонатана Нила https://necolas.github.io/normalize.css/
 */
@@ -152,8 +152,8 @@ img {
 	 ========================================================================== */
 
 /**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
+ * 1. Измените стили шрифта во всех браузерах.
+ * 2. Удалите поля в Firefox и Safari.
  */
 button,
 input,
@@ -167,8 +167,8 @@ textarea {
 }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
+ * 1. Отобразите overflow в IE.
+ * 2. Отобразите overflow в Edge.
  */
 button,
 input {
